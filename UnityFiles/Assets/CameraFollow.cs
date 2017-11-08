@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour
     // Use this for initialization
     void Start () {
         offset = transform.position - player.transform.position;
+        //Cursor.visible = false;
     }
 	
 	// Update is called once per frame

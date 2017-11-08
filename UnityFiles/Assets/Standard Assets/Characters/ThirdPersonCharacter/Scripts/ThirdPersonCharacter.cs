@@ -42,6 +42,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
         }
 
+        public bool isCrouched()
+        {
+            return m_Crouching;
+        }
+
 
         public void Move(Vector3 move, bool crouch, bool jump)
         {
@@ -71,9 +76,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             ScaleCapsuleForCrouching(crouch);
             PreventStandingInLowHeadroom();
 
-            // send input and other state parameters to the animator
-            UpdateAnimator(move);
-
             Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit floorHit;
@@ -82,10 +84,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 Vector3 playerToMouse = floorHit.point - transform.position;
                 playerToMouse.y = 0f;
+                playerToMouse.z = 0f;
 
                 Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
                 m_Rigidbody.MoveRotation(newRotation);
             }
+
+            // send input and other state parameters to the animator
+            UpdateAnimator(move);
         }
 
 
