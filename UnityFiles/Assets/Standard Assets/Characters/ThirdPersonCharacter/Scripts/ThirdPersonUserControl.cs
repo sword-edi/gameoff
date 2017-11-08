@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0f);
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
