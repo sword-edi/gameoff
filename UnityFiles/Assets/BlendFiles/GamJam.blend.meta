@@ -12,6 +12,7 @@ ModelImporter:
     100008: GroundBlock_002
     100010: GroundBlock_003
     100012: GroundBlock_004
+    100014: Alarm
     400000: //RootNode
     400002: Circle
     400004: GroundBlock_000
@@ -19,6 +20,7 @@ ModelImporter:
     400008: GroundBlock_002
     400010: GroundBlock_003
     400012: GroundBlock_004
+    400014: Alarm
     2300000: //RootNode
     2300002: Circle
     2300004: GroundBlock_000
@@ -26,6 +28,7 @@ ModelImporter:
     2300008: GroundBlock_002
     2300010: GroundBlock_003
     2300012: GroundBlock_004
+    2300014: Alarm
     3300000: //RootNode
     3300002: Circle
     3300004: GroundBlock_000
@@ -33,15 +36,22 @@ ModelImporter:
     3300008: GroundBlock_002
     3300010: GroundBlock_003
     3300012: GroundBlock_004
+    3300014: Alarm
     4300000: GroundBlock_000
     4300002: Circle
     4300004: GroundBlock_004
     4300006: GroundBlock_003
     4300008: GroundBlock_002
     4300010: GroundBlock_001
+    4300012: Alarm
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlarmTex
+    second: {fileID: 2100000, guid: d1378bc9ff43d4b59b3682b3d688a3f0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
