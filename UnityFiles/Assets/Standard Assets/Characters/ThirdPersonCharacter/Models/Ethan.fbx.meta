@@ -3,7 +3,7 @@ guid: b235179bd2a63d1468dd430670338c55
 timeCreated: 1477489902
 licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: char_cyberKid_Badge
     100002: char_ethan_body
@@ -175,6 +175,32 @@ ModelImporter:
     100334: EthanUpperLip
     100336: EthanBody1
     100338: EthanSkeleton1
+    100340: EthanLeftBlink_end
+    100342: EthanLeftBrow_end
+    100344: EthanLeftCorner_end
+    100346: EthanLeftEye_end
+    100348: EthanLeftHandIndex4_end
+    100350: EthanLeftHandMiddle4_end
+    100352: EthanLeftHandPinky4_end
+    100354: EthanLeftHandRing4_end
+    100356: EthanLeftHandThumb4_end
+    100358: EthanLeftLowerLip_end
+    100360: EthanLeftToe2_end
+    100362: EthanLeftUpperLip_end
+    100364: EthanLowerLip_end
+    100366: EthanRightBlink_end
+    100368: EthanRightBrow_end
+    100370: EthanRightCorner_end
+    100372: EthanRightEye_end
+    100374: EthanRightHandIndex4_end
+    100376: EthanRightHandMiddle4_end
+    100378: EthanRightHandPinky4_end
+    100380: EthanRightHandRing4_end
+    100382: EthanRightHandThumb4_end
+    100384: EthanRightLowerLip_end
+    100386: EthanRightToe2_end
+    100388: EthanRightUpperLip_end
+    100390: EthanUpperLip_end
     400000: char_cyberKid_Badge
     400002: char_ethan_body
     400004: char_ethan_glasses
@@ -345,6 +371,32 @@ ModelImporter:
     400334: EthanUpperLip
     400336: EthanBody1
     400338: EthanSkeleton1
+    400340: EthanLeftBlink_end
+    400342: EthanLeftBrow_end
+    400344: EthanLeftCorner_end
+    400346: EthanLeftEye_end
+    400348: EthanLeftHandIndex4_end
+    400350: EthanLeftHandMiddle4_end
+    400352: EthanLeftHandPinky4_end
+    400354: EthanLeftHandRing4_end
+    400356: EthanLeftHandThumb4_end
+    400358: EthanLeftLowerLip_end
+    400360: EthanLeftToe2_end
+    400362: EthanLeftUpperLip_end
+    400364: EthanLowerLip_end
+    400366: EthanRightBlink_end
+    400368: EthanRightBrow_end
+    400370: EthanRightCorner_end
+    400372: EthanRightEye_end
+    400374: EthanRightHandIndex4_end
+    400376: EthanRightHandMiddle4_end
+    400378: EthanRightHandPinky4_end
+    400380: EthanRightHandRing4_end
+    400382: EthanRightHandThumb4_end
+    400384: EthanRightLowerLip_end
+    400386: EthanRightToe2_end
+    400388: EthanRightUpperLip_end
+    400390: EthanUpperLip_end
     4300000: char_ethan_glasses
     4300002: char_ethan_body
     4300004: EthanGlasses
@@ -357,26 +409,37 @@ ModelImporter:
     13700004: EthanBody
     13700006: EthanGlasses
     13700008: EthanBody1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EthanWhite
+    second: {fileID: 2100000, guid: f62b52b2d4b721742a0bc5c6b4db468d, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
     materialSearch: 2
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -384,7 +447,10 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 0
@@ -400,6 +466,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
