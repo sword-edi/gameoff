@@ -27,7 +27,7 @@ public class Crosshair : MonoBehaviour {
         mousePos.y = Input.mousePosition.y - o.y;
         p = c.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, c.nearClipPlane - c.transform.position.z - 1f));
         v = p - o;
-        v = this.transform.InverseTransformDirection(v);
+		v = this.transform.InverseTransformDirection(v);
         a = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
         this.transform.position = new Vector3(Mathf.Cos(Mathf.Deg2Rad * a) * 1.5f, Mathf.Sin(Mathf.Deg2Rad * a) * 1.5f, 0f) + o + new Vector3(0f, .3f, 0f);
 

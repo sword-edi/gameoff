@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4393096844748386}
   - component: {fileID: 33937233135902550}
   - component: {fileID: 23727622867455908}
-  - component: {fileID: 64127866281524876}
+  - component: {fileID: 64500378557444708}
   m_Layer: 0
   m_Name: GroundBlock4
   m_TagString: Untagged
@@ -83,7 +83,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1523163671620086}
   m_Mesh: {fileID: 4300004, guid: cee8c82013db24c67b48f85ab7969b3a, type: 3}
---- !u!64 &64127866281524876
+--- !u!64 &64500378557444708
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
