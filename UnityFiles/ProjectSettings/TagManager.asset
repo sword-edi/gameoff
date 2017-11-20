@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Gun
+  - Aim
+  - Enemy
+  - Tir
+  - CC
   layers:
   - Default
   - TransparentFX
@@ -14,12 +19,12 @@ TagManager:
   - UI
   - 
   - 
-  - MouseLayer
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Floor
+  - Mouse
+  - Shootable
+  - Obstacle
+  - Enemy
+  - Player
   - 
   - 
   - 

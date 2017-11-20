@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e263771e2caaed74ab588475263bc42e
+timeCreated: 1510839654
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Eras Bold ITC
+  fontNames:
+  - Eras Bold ITC
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
