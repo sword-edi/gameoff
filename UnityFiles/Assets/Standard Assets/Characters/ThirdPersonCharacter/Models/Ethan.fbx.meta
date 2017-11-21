@@ -201,6 +201,32 @@ ModelImporter:
     100386: EthanRightToe2_end
     100388: EthanRightUpperLip_end
     100390: EthanUpperLip_end
+    100392: EthanLeftBlink_end_end
+    100394: EthanLeftBrow_end_end
+    100396: EthanLeftCorner_end_end
+    100398: EthanLeftEye_end_end
+    100400: EthanLeftHandIndex4_end_end
+    100402: EthanLeftHandMiddle4_end_end
+    100404: EthanLeftHandPinky4_end_end
+    100406: EthanLeftHandRing4_end_end
+    100408: EthanLeftHandThumb4_end_end
+    100410: EthanLeftLowerLip_end_end
+    100412: EthanLeftToe2_end_end
+    100414: EthanLeftUpperLip_end_end
+    100416: EthanLowerLip_end_end
+    100418: EthanRightBlink_end_end
+    100420: EthanRightBrow_end_end
+    100422: EthanRightCorner_end_end
+    100424: EthanRightEye_end_end
+    100426: EthanRightHandIndex4_end_end
+    100428: EthanRightHandMiddle4_end_end
+    100430: EthanRightHandPinky4_end_end
+    100432: EthanRightHandRing4_end_end
+    100434: EthanRightHandThumb4_end_end
+    100436: EthanRightLowerLip_end_end
+    100438: EthanRightToe2_end_end
+    100440: EthanRightUpperLip_end_end
+    100442: EthanUpperLip_end_end
     400000: char_cyberKid_Badge
     400002: char_ethan_body
     400004: char_ethan_glasses
@@ -397,6 +423,32 @@ ModelImporter:
     400386: EthanRightToe2_end
     400388: EthanRightUpperLip_end
     400390: EthanUpperLip_end
+    400392: EthanLeftBlink_end_end
+    400394: EthanLeftBrow_end_end
+    400396: EthanLeftCorner_end_end
+    400398: EthanLeftEye_end_end
+    400400: EthanLeftHandIndex4_end_end
+    400402: EthanLeftHandMiddle4_end_end
+    400404: EthanLeftHandPinky4_end_end
+    400406: EthanLeftHandRing4_end_end
+    400408: EthanLeftHandThumb4_end_end
+    400410: EthanLeftLowerLip_end_end
+    400412: EthanLeftToe2_end_end
+    400414: EthanLeftUpperLip_end_end
+    400416: EthanLowerLip_end_end
+    400418: EthanRightBlink_end_end
+    400420: EthanRightBrow_end_end
+    400422: EthanRightCorner_end_end
+    400424: EthanRightEye_end_end
+    400426: EthanRightHandIndex4_end_end
+    400428: EthanRightHandMiddle4_end_end
+    400430: EthanRightHandPinky4_end_end
+    400432: EthanRightHandRing4_end_end
+    400434: EthanRightHandThumb4_end_end
+    400436: EthanRightLowerLip_end_end
+    400438: EthanRightToe2_end_end
+    400440: EthanRightUpperLip_end_end
+    400442: EthanUpperLip_end_end
     4300000: char_ethan_glasses
     4300002: char_ethan_body
     4300004: EthanGlasses
