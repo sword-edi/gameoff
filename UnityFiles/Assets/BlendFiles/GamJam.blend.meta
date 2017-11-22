@@ -40,6 +40,9 @@ ModelImporter:
     100064: Hill_01
     100066: Hill_02
     100068: Ladder
+    100070: BackBuilding
+    100072: Barel
+    100074: Box
     400000: //RootNode
     400002: Circle
     400004: GroundBlock_000
@@ -75,6 +78,9 @@ ModelImporter:
     400064: Hill_01
     400066: Hill_02
     400068: Ladder
+    400070: BackBuilding
+    400072: Barel
+    400074: Box
     2300000: //RootNode
     2300002: Circle
     2300004: GroundBlock_000
@@ -110,6 +116,9 @@ ModelImporter:
     2300064: Hill_01
     2300066: Hill_02
     2300068: Ladder
+    2300070: BackBuilding
+    2300072: Barel
+    2300074: Box
     3300000: //RootNode
     3300002: Circle
     3300004: GroundBlock_000
@@ -145,6 +154,9 @@ ModelImporter:
     3300064: Hill_01
     3300066: Hill_02
     3300068: Ladder
+    3300070: BackBuilding
+    3300072: Barel
+    3300074: Box
     4300000: GroundBlock_000
     4300002: Circle
     4300004: GroundBlock_004
@@ -179,14 +191,37 @@ ModelImporter:
     4300062: BuildWallBaseCenterWindow
     4300064: BuildWallBaseCenter
     4300066: BuildWallBaseLeft
+    4300068: BackBuilding
+    4300070: Barel
+    4300072: Box
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AlarmMat
+    second: {fileID: 2100000, guid: 00feeafa653c946c1b1eb933dc97df41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: AlarmTex
     second: {fileID: 2100000, guid: d1378bc9ff43d4b59b3682b3d688a3f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackBuildTex
+    second: {fileID: 2100000, guid: 7f93c06b324294a44a6afb6f65bba3b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarelMat
+    second: {fileID: 2100000, guid: 193e1081ce26248358f059b8e36990fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxMal
+    second: {fileID: 2100000, guid: 2129be50e7e6446d2acc305315548b6e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4395584522783188}
   - component: {fileID: 33002825574412660}
   - component: {fileID: 23757305406256886}
-  - component: {fileID: 64958890590406838}
+  - component: {fileID: 64415009616997942}
   m_Layer: 0
   m_Name: GroundBlock2
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492271002412788}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -0.00000026226832, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -83,7 +83,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492271002412788}
   m_Mesh: {fileID: 4300010, guid: cee8c82013db24c67b48f85ab7969b3a, type: 3}
---- !u!64 &64958890590406838
+--- !u!64 &64415009616997942
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -93,7 +93,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
+  m_Convex: 0
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300010, guid: cee8c82013db24c67b48f85ab7969b3a, type: 3}
