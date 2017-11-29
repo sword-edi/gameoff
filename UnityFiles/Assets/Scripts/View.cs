@@ -28,6 +28,7 @@ public class View : MonoBehaviour {
 
 	private GunShoot shooter;
 	Health health;
+	bool melee;
 
     void Awake()
     {
@@ -42,6 +43,7 @@ public class View : MonoBehaviour {
 		if (gun != null)
 			shooter = gun.GetComponent<GunShoot>();
 		health = GetComponent<Health>();
+		melee = false;
     }
 
     // Update is called once per frame
@@ -52,7 +54,9 @@ public class View : MonoBehaviour {
 				int r = (int)Random.Range(0f, Visible_Targets.Count);
 				target = Visible_Targets.ToArray()[r];
 				if (CompareTag("CC")) {
-					Mouvement(Visible_Targets[0]);
+					if (!melee) {
+						Mouvement(target);
+					}
 				} else if (CompareTag("Tir")) {
 					//float rand = Random.Range(3.0f, 4.0f);
 					//InvokeRepeating("Shoot", 2, rand);
@@ -87,13 +91,14 @@ public class View : MonoBehaviour {
         Collider[] Target_In_View_Radius = Physics.OverlapSphere(transform.position, View_Radius, Target_Mask);
 
         for (int i = 0; i < Target_In_View_Radius.Length; i++){
-            Transform Target = Target_In_View_Radius[i].transform;
-            Vector3 Dir_To_Target = (Target.position - transform.position).normalized;
-            if (Vector3.Angle(transform.forward, Dir_To_Target) < View_Angle/2){
+			Transform Target = Target_In_View_Radius[i].transform;
+			Vector3 Dir_To_Target = (Target.position - transform.position).normalized;
+
+			if (Vector3.Angle(transform.forward, Dir_To_Target) < View_Angle/2){
                 float dst_To_Target = Vector3.Distance(transform.position, Target.position);
 
-                if (!Physics.Raycast(transform.position, Dir_To_Target, dst_To_Target, Obstacle_Mask)){
-                    Visible_Targets.Add(Target);
+				if (Physics.Raycast(transform.position, Dir_To_Target, dst_To_Target, Target_Mask) && !Physics.Raycast(transform.position, Dir_To_Target, dst_To_Target, Obstacle_Mask)) {
+					Visible_Targets.Add(Target);
                 }
             }
         }
@@ -108,7 +113,7 @@ public class View : MonoBehaviour {
 
     private void Shoot()
     {
-        Vector3 direction = target.position - transform.position;
+        /*Vector3 direction = target.position - transform.position;
 
         /* bullet = Instantiate(projectile, canon.position, canon.rotation);
 
@@ -140,8 +145,10 @@ public class View : MonoBehaviour {
         //Si la variable "vieActuelle" est supérieur a 0
         //if (pdv > 0)
         //{
-        Debug.DrawLine(cible.transform.position, maTransform.position, Color.blue);
-        agent.destination = cible.position;//le squelette se dirige vers le joueur
+		if (cible != null) {
+	        Debug.DrawLine(cible.transform.position, maTransform.position, Color.blue);
+	        agent.destination = cible.position;//le squelette se dirige vers le joueur
+		}
 //        print("Bouge :" + agent.destination + " => " + cible.position);
         //}
     }
@@ -149,7 +156,11 @@ public class View : MonoBehaviour {
     //L'ennemi reste a sa position actuelle
     private void Stop()
     {
-//        print("NE BOUGE PLUS !!");
+        //print("NE BOUGE PLUS !!");
         agent.destination = transform.position;
     }
+
+	public void SetMelee(bool m) {
+		melee = m;
+	}
 }

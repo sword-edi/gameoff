@@ -6,11 +6,13 @@ public class MeleeAttack : MonoBehaviour {
 	PlayerControl playerCtrl;
 	Health targetHealth;
 	bool isEnemy;
+	View enemyView;
 
 	// Use this for initialization
 	void Start () {
 		if (CompareTag("CC")) {
 			targetHealth = GameObject.Find("Player").GetComponent<Health>();
+			enemyView = GetComponent<View>();
 			isEnemy = true;
 		} else {
 			isEnemy = false;
@@ -37,7 +39,14 @@ public class MeleeAttack : MonoBehaviour {
 		}
 
 		if (isEnemy && go.name == "Player") {
+			enemyView.SetMelee(true);
 			targetHealth.DecreaseHealth(15);
+		}
+	}
+
+	void OnTriggerExit() {
+		if (isEnemy) {
+			enemyView.SetMelee(false);
 		}
 	}
 }

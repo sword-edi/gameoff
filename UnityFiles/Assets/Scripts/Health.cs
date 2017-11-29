@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
 	public Slider healthBar;
 
-	GameObject scene;
+	ZoneDetection captureZone;
 	float amount = 100f;
 	float max = 100f;
+	SceneManager sceneMgr;
 
 	// Use this for initialization
 	void Start () {
-		scene = GameObject.Find("CaptureZone");
+		captureZone = GameObject.Find("CaptureZone").GetComponent<ZoneDetection>();
 	}
 	
 	// Update is called once per frame
@@ -33,8 +35,18 @@ public class Health : MonoBehaviour {
 	public float DecreaseHealth(float _amount = 10f) {
 		amount -= _amount;
 		if (amount <= 0) {
-			Debug.Log(gameObject + ": \"I'm dead!\"");
-			Destroy(gameObject);
+			bool isPlayer = CompareTag("Player");
+			Scene currentScene = SceneManager.GetActiveScene();
+
+			if (isPlayer) {
+				Destroy(GameObject.Find("Gun"));
+				SceneManager.LoadScene("Gameover", LoadSceneMode.Single);
+				SceneManager.UnloadSceneAsync("IA");
+			}
+
+			if (currentScene == SceneManager.GetActiveScene()) {
+				Destroy(gameObject);
+			}
 		}
 		return GetHealth();
 	}

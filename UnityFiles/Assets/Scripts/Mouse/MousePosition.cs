@@ -22,7 +22,10 @@ public class MousePosition : MonoBehaviour {
 		if (Physics.Raycast(camRay, out camHit, 100f)) {
 			Vector3 newPosition = camHit.point;
 			newPosition.z = 0f;
-			transform.position = newPosition + player.transform.position;
+
+			if (player != null) {
+				transform.position = newPosition + player.transform.position;
+			}
 		}
 	}
 }

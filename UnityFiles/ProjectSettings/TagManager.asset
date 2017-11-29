@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Tir
   - CC
+  - Obstacle
   layers:
   - Default
   - TransparentFX

@@ -1,21 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuClick : MonoBehaviour {
 
-	AudioSource audio;
+	AudioSource source;
 
 	void Start() {
-		audio = GetComponent<AudioSource>();
+		source = GetComponent<AudioSource>();
+		Cursor.visible = true;
 	}
 
 	void PlaySound() {
-		audio.Play();
+		source.Play();
+	}
+
+	public void RestartGame() {
+		PlaySound();
+		SceneManager.LoadScene("IA", LoadSceneMode.Single);
 	}
 
 	public void ContinueGame() {
 		PlaySound();
+		SceneManager.LoadScene("IA", LoadSceneMode.Single);
 	}
 
 	public void SelectLevel() {

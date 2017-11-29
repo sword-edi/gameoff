@@ -20,6 +20,7 @@ public class GunShoot : MonoBehaviour {
 	RaycastHit shootHit;
 	bool hitSomething;
 	bool soundPlaying;
+	GameObject playerObj;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,8 @@ public class GunShoot : MonoBehaviour {
 		range = 5.5f;
 		hitSomething = false;
 		soundPlaying = false;
+		shootRay = new Ray();
+		playerObj = GameObject.Find("Player");
 	}
 
 	public void SetShooting(bool s) {
@@ -70,9 +73,14 @@ public class GunShoot : MonoBehaviour {
 		if (timer2 < shootSpeed) {
 			fire.enabled = true;
 			shootRay.origin = transform.position;
-			Vector3 aimPosition = aim.transform.position;
-			aimPosition.z = -0.16667f;
-			shootRay.direction = aimPosition - transform.position;
+
+			if (CompareTag("Gun")) {
+				Vector3 aimPosition = aim.transform.position;
+				aimPosition.z = -0.16667f;
+				shootRay.direction = aimPosition - transform.position;
+			} else {
+				shootRay.direction = (playerObj.transform.position + Vector3.up * 1.7f) - transform.position;
+			}
 			gunShot.enabled = true;
 			gunShot.SetPosition(0, transform.position);
 
@@ -83,7 +91,7 @@ public class GunShoot : MonoBehaviour {
 
 				if (!hitSomething && dmg != null) {
 					hitSomething = true;
-					dmg.TakeDamage(baseDamage);
+					dmg.TakeDamage(transform.position, baseDamage);
 				}
 			} else {
 				gunShot.SetPosition(1, shootRay.origin + shootRay.direction * range);

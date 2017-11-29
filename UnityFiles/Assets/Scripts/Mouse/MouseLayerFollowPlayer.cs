@@ -13,6 +13,8 @@ public class MouseLayerFollowPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(player.transform.position.x, player.transform.position.y, 0f);
+		if (player != null) {
+			transform.position = new Vector3(player.transform.position.x, player.transform.position.y, 0f);
+		}
 	}
 }
