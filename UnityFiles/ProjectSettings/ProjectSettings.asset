@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: c302da0391a66674bbafaa9a064d58ae
+  productGUID: 85a4b4b90e66e6d40abc16a508f57c74
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: UnityFiles
+  productName: Tests
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -528,14 +528,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: UnityFiles
+  metroPackageName: Tests
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: UnityFiles
+  metroApplicationDescription: Tests
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -610,8 +610,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: a166d376-b073-4100-80ce-8994f73f6ceb
-  projectName: UnityFiles
+  cloudProjectId: 077d8bfb-0620-403b-b68a-90e3df034281
+  projectName: Tests
   organizationId: alatorre
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
